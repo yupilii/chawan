@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFF6;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url(/public/fonts/Raleway-v4020-Regular.otf);
+}
+
+@font-face {
+    font-family: 'caveat';
+    src: url(/public/fonts/Caveat.ttf);
+}
+
+@font-face {
+    font-family: 'playfair';
+    src: url(/public/fonts/PlayfairDisplay.ttf);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 12px;
+}
+
+.textNavigation {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 136px;
+}
+
+.textNav {
+    font-size: 30px;
+    font-family: 'playfair';
+    color: #474135;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.textNav:hover {
+    color: #515E09;
+}
+
+.sideImg {
+    align-self: flex-start;
+}
+
+.heroBlock {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/public/images/products/Group 120.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroTitle {
+    font-family: 'playfair';
+    font-size: 100px;
+    color: #D8DFB7;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 200px 0 50px 0;
+    line-height: 1.2;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.heroSubtitle {
+    font-family: 'caveat';
+    font-size: 50px;
+    color: #D8DFB7;
+    margin: 0;
+}
+
+.heroBtn {
+    width: 400px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #D8DFB7;
+    border-radius: 30px;
+    color: #D8DFB7;
+    font-family: 'raleway';
+    font-size: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroBtn:hover {
+    background-color: #D8DFB7;
+    color: #515E09;
+}
+
+.aboutBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 104px;
+}
+
+.titleBlock2 {
+    font-family: 'playfair';
+    font-size: 60px;
+    color: #474135;
+    text-transform: uppercase;
+}
+
+.textBlock2 {
+    font-size: 30px;
+    font-family: 'raleway';
+    color: #474135;
+    text-align: center;
+    line-height: 1.66;
+}
+
+.aboutBtn {
+    width: 361px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #8D9758;
+    color: #D8DFB7;
+    font-family: 'raleway';
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.aboutBtn:hover {
+    background-color: transparent;
+    color: #8D9758;
+    border-color: #8D9758;
+}
+
+.ceremoniesBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #FFFFF6;
+    overflow: hidden;
+}
+
+.ceremonyItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color: #97A162;
+    text-decoration: none;
+    margin: 0;
+}
+
+.ceremonyItem:hover {
+    background-color: #7d8752;
+}
+
+.ceremonyText {
+    font-family: 'playfair';
+    font-size: 50px;
+    color: #FBFFE7;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.patternTop,
+.patternBottom {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 32px;
+    object-fit: fill;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.patternTop {
+    top: -16px;
+}
+
+.patternBottom {
+    bottom: -16px;
+}
