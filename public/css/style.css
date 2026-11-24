@@ -6,6 +6,9 @@
 
 body {
     background-color: #FFFFF6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 @font-face {
@@ -21,6 +24,10 @@ body {
 @font-face {
     font-family: 'playfair';
     src: url(/public/fonts/PlayfairDisplay.ttf);
+}
+
+main {
+    flex: 1;
 }
 
 header {
@@ -73,6 +80,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-attachment: fixed;
 }
 
 .heroTitle {
@@ -129,6 +137,10 @@ header {
     align-items: center;
     margin-top: 120px;
     margin-bottom: 104px;
+}
+
+.aboutBlock a {
+    text-decoration: none;
 }
 
 .titleBlock2 {
@@ -422,7 +434,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
 }
 
 .navFooter {
@@ -450,4 +462,63 @@ footer {
 
 .textFooter:hover {
     color: #D8DFB7;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+    margin-top: 120px;
+    margin-bottom: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoCont {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.contact {
+    font-family: 'playfair';
+    font-size: 70px;
+    color: #474135;
+    text-transform: uppercase;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.inf {
+    font-family: 'raleway';
+    font-size: 30px;
+    color: #474135;
+}
+
+.green {
+    color: #515E09;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+}
+
+.iconLink {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.iconLink:hover {
+    transform: scale(1.15);
+}
+
+.map {
+    border: 3px solid #515E09;
 }
