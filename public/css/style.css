@@ -220,3 +220,234 @@ header {
 .patternBottom {
     bottom: -16px;
 }
+
+.collection {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+.textCollection {
+    font-family: 'playfair';
+    font-size: 60px;
+    color: #474135;
+    text-transform: uppercase;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 23px;
+}
+
+.cardCollection {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 498px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nameCard {
+    font-family: 'playfair';
+    color: #474135;
+    font-size: 35px;
+}
+
+.country {
+    font-family: 'raleway';
+    font-size: 25px;
+    color: rgba(71, 65, 53, 0.74);
+}
+
+.descCard {
+    font-size: 25px;
+    font-family: 'raleway';
+    color: #474135;
+}
+
+.detailBtn {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #474135;
+    border-radius: 30px;
+    color: #474135;
+    font-family: 'raleway';
+    font-size: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detailBtn:hover {
+    background-color: #D8DFB7;
+    color: #474135;
+}
+
+.employee {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    gap: 80px;
+    align-items: center;
+}
+
+.textEmp {
+    display: flex;
+    flex-direction: column;
+}
+
+.textEmp1 {
+    font-family: 'playfair';
+    font-size: 60px;
+    color: #474135;
+    text-transform: uppercase;
+}
+
+.textEmp2 {
+    font-family: 'caveat';
+    font-size: 50px;
+    color: #515E09;
+    padding-left: 400px;
+}
+
+.cardEmp {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.empCard {
+    max-width: 434px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nameEmp {
+    font-family: 'playfair';
+    font-size: 35px;
+    color: #474135;
+}
+
+.detailEmp {
+    font-family: 'raleway';
+    font-size: 25px;
+    color: #474135;
+    line-height: 1.4;
+}
+
+.faqBlock {
+    width: 100%;
+    max-width: 1612px;
+    margin: 150px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.faqTitle {
+    font-family: 'playfair';
+    font-size: 60px;
+    color: #474135;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.faqList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.faqItem {
+    border-bottom: 1px solid rgba(71, 65, 53, 0.74);
+    width: 100%;
+}
+
+.faqQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    font-family: 'raleway';
+    font-size: 35px;
+    color: #515E09;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faqQuestion::-webkit-details-marker {
+    display: none;
+}
+
+.faqArrow {
+    width: 60px;
+    height: 29px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+details[open] .faqArrow {
+    transform: rotate(180deg);
+}
+
+.faqAnswer {
+    padding-bottom: 30px;
+    font-family: 'raleway';
+    font-size: 25px;
+    color: #474135;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url('/public/images/products/Group\ 122.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.navFooter {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 12px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 136px;
+}
+
+.textFooter {
+    font-size: 30px;
+    font-family: 'playfair';
+    color: #FBFFE7;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.textFooter:hover {
+    color: #D8DFB7;
+}
