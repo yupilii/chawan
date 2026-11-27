@@ -1,29 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #FFFFF6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 @font-face {
     font-family: 'raleway';
-    src: url(/public/fonts/Raleway-v4020-Regular.otf);
+    src: url(/fonts/Raleway-v4020-Regular.otf);
 }
 
 @font-face {
     font-family: 'caveat';
-    src: url(/public/fonts/Caveat.ttf);
+    src: url(/fonts/Caveat.ttf);
 }
 
 @font-face {
     font-family: 'playfair';
-    src: url(/public/fonts/PlayfairDisplay.ttf);
+    src: url(/fonts/PlayfairDisplay.ttf);
+}
+
+body {
+    background-color: #FFFFF6;
+}
+
+::selection {
+    background-color: #97A162;
+    color: #FFFFF6;
 }
 
 main {
@@ -56,7 +52,6 @@ header {
     font-size: 30px;
     font-family: 'playfair';
     color: #474135;
-    text-decoration: none;
     text-transform: uppercase;
     transition: color 0.3s ease;
 }
@@ -72,7 +67,7 @@ header {
 .heroBlock {
     width: 100%;
     height: 100vh;
-    background-image: url('/public/images/products/Group 120.png');
+    background-image: url('/images/products/Group 120.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -400,10 +395,6 @@ header {
     list-style: none;
 }
 
-.faqQuestion::-webkit-details-marker {
-    display: none;
-}
-
 .faqArrow {
     width: 60px;
     height: 29px;
@@ -430,11 +421,10 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-image: url('/public/images/products/Group\ 122.svg');
+    background-image: url('/images/products/Group\ 122.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .navFooter {
@@ -521,4 +511,581 @@ footer {
 
 .map {
     border: 3px solid #515E09;
+}
+
+.parallax {
+    width: 100%;
+    height: 630px;
+    background-image: url('/images/products/Group 123.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    gap: 15px;
+    margin-bottom: 150px;
+}
+
+.parallaxText {
+    font-family: 'caveat';
+    font-size: 40px;
+    color: #D8DFB7;
+    text-align: center;
+}
+
+.parallaxSubtitle {
+    font-family: 'playfair';
+    font-size: 70px;
+    color: #D8DFB7;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.catalogBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 150px;
+}
+
+.catalogTitle {
+    font-family: 'playfair';
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #474135;
+}
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.ceremonyBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.ceremonyInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 71px;
+    margin-top: 79px;
+    max-width: 569px;
+}
+
+.ceremonyInfo1 {
+    display: flex;
+    flex-direction: column;
+    gap: 71px;
+    margin-top: 79px;
+    max-width: 612px;
+}
+
+.descCeremony {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.titleCeremony {
+    font-family: 'playfair';
+    font-size: 40px;
+    color: #474135;
+}
+
+.textCeremony {
+    font-family: 'raleway';
+    color: #474135;
+    font-size: 25px;
+    line-height: 1.4;
+}
+
+.infoCeremony {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.detailCeremony {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail {
+    font-family: 'raleway';
+    color: #474135;
+    font-size: 25px;
+}
+
+.blockAbout {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 130px;
+    margin-left: 150px;
+    gap: 120px;
+    overflow: visible;
+    margin-bottom: 194px;
+}
+
+.aboutImg {
+    position: relative;
+    z-index: 2;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 195px;
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.aboutTitle {
+    font-family: 'playfair';
+    font-size: 60px;
+    color: #474135;
+    text-transform: uppercase;
+}
+
+.textAbout {
+    font-family: 'raleway';
+    font-size: 30px;
+    color: #474135;
+    line-height: 2;
+}
+
+.branchTop {
+    position: absolute;
+    top: -180px;
+    right: 0;
+    width: 547px;
+    height: 546px;
+    z-index: 1;
+    transform: scaleY(-1) scaleX(-1);
+    pointer-events: none;
+}
+
+.branchBottom {
+    position: absolute;
+    top: 351px;
+    left: -180px;
+    width: 547px;
+    height: 546px;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.featuresBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 150px;
+}
+
+.featureItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.featureText {
+    font-family: 'caveat';
+    font-size: 50px;
+    color: #474135;
+}
+
+.featureItem img {
+    transition: transform 0.3s ease;
+}
+
+.featureItem:hover img {
+    transform: scale(1.2);
+}
+
+.gallerySection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    overflow: hidden;
+}
+
+.galleryContainer {
+    position: relative;
+    width: 1731px;
+    height: 1226px;
+}
+
+.galleryContainer img {
+    position: absolute;
+    object-fit: contain;
+}
+
+@keyframes float1 {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes float2 {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(12px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes float3 {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(1.5deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.imgVinyl {
+    top: 66px;
+    left: 89px;
+    z-index: 2;
+    animation: float1 3s ease-in-out infinite;
+}
+
+.imgCeremony {
+    top: 0;
+    left: 504px;
+    z-index: 1;
+}
+
+.imgPourRight {
+    top: 192px;
+    right: 0;
+    z-index: 3;
+}
+
+.imgPourLeft {
+    top: 412px;
+    left: 0;
+    z-index: 2;
+}
+
+.galleryTextBlock {
+    position: absolute;
+    top: 558px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.galleryText {
+    font-family: 'playfair';
+    font-size: 40px;
+    color: #474135;
+    margin: 0;
+}
+
+.imgBranch {
+    bottom: 63px;
+    right: 15px;
+    z-index: 2;
+    animation: float2 3.5s ease-in-out infinite;
+}
+
+.imgMatcha {
+    bottom: 29px;
+    left: 383px;
+    z-index: 4;
+    animation: float3 2.5s ease-in-out infinite;
+}
+
+.imgTeaCup {
+    bottom: 0;
+    right: 474px;
+    z-index: 3;
+}
+
+.teaDetailBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 80px;
+    max-width: 1703px;
+    margin: 40px auto 150px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.teaImg {
+    width: 802px;
+    height: auto;
+    object-fit: contain;
+}
+
+.teaText {
+    display: flex;
+    flex-direction: column;
+    padding-top: 52px;
+    flex: 1;
+}
+
+.teaTitle {
+    font-family: 'playfair';
+    font-size: 60px;
+    color: #474135;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.teaCountry {
+    font-family: 'raleway';
+    font-size: 40px;
+    color: rgba(71, 65, 53, 0.74);
+    margin-bottom: 50px;
+}
+
+.teaDescription {
+    font-family: 'raleway';
+    font-size: 25px;
+    color: #474135;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.specsTitle {
+    font-family: 'raleway';
+    font-size: 30px;
+    color: #515E09;
+    margin-bottom: 18px;
+}
+
+.specsTable {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.specsTable td {
+    padding: 10px 22px;
+    font-family: 'raleway';
+    font-size: 25px;
+    color: #474135;
+}
+
+.specsTable tr:nth-child(odd) td {
+    background-color: #D8DFB7;
+}
+
+.specsTable tr:nth-child(even) td {
+    background-color: #FFFFEF;
+}
+
+.specName {
+    width: 35%;
+}
+
+.specValue {
+    width: 65%;
+}
+
+.serviceDetailBlock {
+    display: flex;
+    flex-direction: column;
+    max-width: 1694px;
+    margin: 60px auto;
+    box-sizing: border-box;
+    margin-bottom: 150px;
+}
+
+.serviceHeader {
+    margin-bottom: 40px;
+}
+
+.serviceTitle {
+    font-family: 'playfair';
+    font-size: 60px;
+    color: #474135;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.serviceSubtitle {
+    font-family: 'raleway';
+    font-size: 40px;
+    color: rgba(71, 65, 53, 0.74);
+}
+
+.serviceContentRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 127px;
+}
+
+.serviceLeft {
+    display: flex;
+    flex-direction: column;
+    width: 818px;
+}
+
+.serviceImg {
+    width: 817px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.serviceDescription {
+    font-family: 'raleway';
+    font-size: 25px;
+    color: #474135;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.serviceRight {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.bookingForm {
+    display: flex;
+    flex-direction: column;
+    width: 756px;
+    height: 683px;
+    background-image: url('/images/products/Rectangle 13.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 102px 82px;
+    box-sizing: border-box;
+    justify-content: center;
+    position: relative;
+}
+
+.bookingTitle {
+    font-family: 'playfair';
+    font-size: 40px;
+    color: #474135;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.bookingInput {
+    width: 585px;
+    height: 52px;
+    padding: 6px 20px;
+    margin-bottom: 25px;
+    border: 1px solid #515E09;
+    background-color: transparent;
+    font-family: 'raleway';
+    font-size: 25px;
+    color: #474135;
+    box-sizing: border-box;
+    outline: none;
+    position: relative;
+}
+
+.bookingInput::placeholder {
+    color: rgba(71, 65, 53, 0.74);
+}
+
+.bookingInput[type="date"] {
+    color: #474135;
+}
+
+.bookingInput[type="date"]:invalid::-webkit-datetime-edit {
+    color: rgba(71, 65, 53, 0.74);
+}
+
+.error-text {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: #d32f2f;
+    font-size: 16px;
+    font-family: 'raleway';
+    white-space: nowrap;
+}
+
+.bookingBtn {
+    width: 100%;
+    height: 60px;
+    background-color: #8D9758;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: #D8DFB7;
+    font-family: 'raleway';
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.bookingBtn:hover {
+    background-color: transparent;
+    color: #8D9758;
+    border-color: #8D9758;
+}
+
+#successModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #FFFFF6;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #515E09;
+    text-align: center;
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #474135;
+}
+
+.modal-title {
+    font-family: 'playfair';
+    font-size: 40px;
+    color: #515E09;
+    margin-bottom: 20px;
+}
+
+.modal-text {
+    font-family: 'raleway';
+    font-size: 25px;
+    color: #474135;
 }
